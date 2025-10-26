@@ -1,10 +1,11 @@
+import DashboardLayout from './components/ui/layout/dashboardLayout';
+import UserProfileCard from './components/ui/sections/userProfileCard';
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <h1 className="text-4xl font-bold text-gray-900">
-        Create Customer Dashboard
-      </h1>
-    </div>
+    <DashboardLayout>
+      <UserProfileCard />
+      
+    </DashboardLayout>
   )
 }
 
