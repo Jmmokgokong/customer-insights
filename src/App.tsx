@@ -4,6 +4,7 @@ import UserProfileCard from './components/ui/sections/userProfileCard';
 import FilterSection from './components/ui/sections/FilteringSection';
 import SpendingChart from './components/ui/sections/SpendingChart';
 import TransactionsTable from './components/ui/sections/TransactionTable';
+import SpendingTrendChart from './components/ui/sections/TrendChart';
 function App() {
   return (
     <DashboardLayout>
@@ -13,6 +14,7 @@ function App() {
         <FilterSection />
         <SpendingChart />
         <TransactionsTable />
+        <SpendingTrendChart />
       </div>
     </DashboardLayout>
   );
