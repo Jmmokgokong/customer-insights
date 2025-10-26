@@ -1,4 +1,3 @@
-// TypeScript interfaces for Customer Spending Insights API
 
 export interface CustomerProfile {
   customerId: string;
@@ -103,14 +102,12 @@ export interface FiltersResponse {
   dateRangePresets: DateRangePreset[];
 }
 
-// API Error response
 export interface ApiError {
   error: string;
   message: string;
   statusCode: number;
 }
 
-// Query parameters for different endpoints
 export interface SpendingSummaryParams {
   period?: '7d' | '30d' | '90d' | '1y';
 }
