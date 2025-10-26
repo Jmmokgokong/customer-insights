@@ -13,10 +13,10 @@ const MetricsCards = () => {
       <Card>
         <div className="text-center">
           <p className="text-sm text-gray-500">TOTAL SPEND</p>
-          <p className="text-2xl font-bold text-blue-600">
+          <p className="text-2xl font-bold text-primary">
             {summary.totalSpent}
           </p>
-          <p className="text-sm text-green-600">
+          <p className="text-sm text-ci-green">
             +{summary.comparedToPrevious.spentChange}%
           </p>
         </div>
@@ -25,10 +25,10 @@ const MetricsCards = () => {
       <Card>
         <div className="text-center">
           <p className="text-sm text-gray-500">AVERAGE TRANSACTION</p>
-          <p className="text-2xl font-bold text-blue-600">
+          <p className="text-2xl font-bold text-primary">
             {summary.averageTransaction}
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-600">
             {summary.transactionCount} transactions
           </p>
         </div>
@@ -37,10 +37,10 @@ const MetricsCards = () => {
       <Card>
         <div className="text-center">
           <p className="text-sm text-gray-500">TOP CATEGORY</p>
-          <p className="text-2xl font-bold text-blue-600">
+          <p className="text-2xl font-bold text-primary">
             {summary.topCategory}
           </p>
-          <p className="text-sm text-gray-500">Most spent</p>
+          <p className="text-sm text-gray-600">Most spent</p>
         </div>
       </Card>
     </div>

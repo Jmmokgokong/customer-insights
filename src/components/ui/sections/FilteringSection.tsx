@@ -14,9 +14,13 @@ const FilterSection = () => {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Time Period
           </label>
-          <select className="w-full border border-gray-300 rounded-md px-3 py-2">
+          <select className="w-full border border-primary rounded-md px-3 py-2 text-gray-900">
             {filters.dateRangePresets.map(preset => (
-              <option key={preset.value} value={preset.value}>
+              <option
+                key={preset.value}
+                value={preset.value}
+                className="text-gray-900"
+              >
                 {preset.label}
               </option>
             ))}
@@ -27,10 +31,16 @@ const FilterSection = () => {
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Category
           </label>
-          <select className="w-full border border-gray-300 rounded-md px-3 py-2">
-            <option value="">All Categories</option>
+          <select className="w-full border border-primary rounded-md px-3 py-2 text-gray-900">
+            <option value="" className="text-gray-900">
+              All Categories
+            </option>
             {filters.categories.map(category => (
-              <option key={category.name} value={category.name}>
+              <option
+                key={category.name}
+                value={category.name}
+                className="text-gray-900"
+              >
                 {category.name}
               </option>
             ))}
@@ -38,7 +48,7 @@ const FilterSection = () => {
         </div>
 
         <div className="shrink-0">
-          <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50">
+          <button className="px-4 py-2 border border-primary text-primary rounded-md hover:bg-ci-light">
             Reset filters
           </button>
         </div>

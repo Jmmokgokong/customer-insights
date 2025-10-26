@@ -11,7 +11,9 @@ const SpendingChart = () => {
 
   return (
     <Card>
-      <h3 className="text-lg font-semibold mb-4">Spending Overview</h3>
+      <h3 className="text-lg font-semibold mb-4 text-primary">
+        Spending Overview
+      </h3>
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="flex-1">
           <ResponsiveContainer width="100%" height={300}>
@@ -43,9 +45,11 @@ const SpendingChart = () => {
                     className="w-4 h-4 rounded"
                     style={{ backgroundColor: category.color }}
                   />
-                  <span className="text-sm">{category.name}</span>
+                  <span className="text-sm text-gray-900 font-medium">
+                    {category.name}
+                  </span>
                 </div>
-                <div className="text-sm text-gray-600">
+                <div className="text-sm text-primary font-semibold">
                   {category.amount} ({category.percentage}%)
                 </div>
               </div>

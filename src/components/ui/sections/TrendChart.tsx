@@ -22,7 +22,9 @@ const SpendingTrendChart = () => {
 
   return (
     <Card>
-      <h3 className="text-lg font-semibold mb-4">Monthly Spending Trend</h3>
+      <h3 className="text-lg font-semibold mb-4 text-primary">
+        Monthly Spending Trend
+      </h3>
       <p className="text-sm text-gray-600 mb-6">
         Track your spending over the last 6 months
       </p>
@@ -43,7 +45,7 @@ const SpendingTrendChart = () => {
               formatter={value => [`R${value}`, 'Total Spent']}
               labelFormatter={label => `Month: ${label}`}
             />
-            <Bar dataKey="totalSpent" fill="#3B82F6" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="totalSpent" fill="#007bff" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
