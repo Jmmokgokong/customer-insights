@@ -1,8 +1,8 @@
-import { useFilters } from "../../../hooks/useCustomerData";
+import { useFilters } from '../../../hooks/useCustomerData';
 
 const FilterSection = () => {
   const { data: filters, loading, error } = useFilters('12345');
-  
+
   if (loading) return <div>Loading filters...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!filters) return <div>No filter data</div>;
@@ -15,7 +15,7 @@ const FilterSection = () => {
             Time Period
           </label>
           <select className="w-full border border-gray-300 rounded-md px-3 py-2">
-            {filters.dateRangePresets.map((preset) => (
+            {filters.dateRangePresets.map(preset => (
               <option key={preset.value} value={preset.value}>
                 {preset.label}
               </option>
@@ -29,7 +29,7 @@ const FilterSection = () => {
           </label>
           <select className="w-full border border-gray-300 rounded-md px-3 py-2">
             <option value="">All Categories</option>
-            {filters.categories.map((category) => (
+            {filters.categories.map(category => (
               <option key={category.name} value={category.name}>
                 {category.name}
               </option>
@@ -37,7 +37,7 @@ const FilterSection = () => {
           </select>
         </div>
 
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50">
             Reset filters
           </button>

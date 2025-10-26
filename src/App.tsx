@@ -2,6 +2,7 @@ import DashboardLayout from './components/ui/layout/dashboardLayout';
 import MetricCardSection from './components/ui/sections/MetricCardSection';
 import UserProfileCard from './components/ui/sections/userProfileCard';
 import FilterSection from './components/ui/sections/FilteringSection';
+import SpendingChart from './components/ui/sections/SpendingChart';
 function App() {
   return (
     <DashboardLayout>
@@ -9,9 +10,10 @@ function App() {
         <UserProfileCard />
         <MetricCardSection />
         <FilterSection />
+        <SpendingChart />
       </div>
     </DashboardLayout>
-  )
+  );
 }
 
-export default App
+export default App;
