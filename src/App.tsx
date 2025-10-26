@@ -3,6 +3,7 @@ import MetricCardSection from './components/ui/sections/MetricCardSection';
 import UserProfileCard from './components/ui/sections/userProfileCard';
 import FilterSection from './components/ui/sections/FilteringSection';
 import SpendingChart from './components/ui/sections/SpendingChart';
+import TransactionsTable from './components/ui/sections/TransactionTable';
 function App() {
   return (
     <DashboardLayout>
@@ -11,6 +12,7 @@ function App() {
         <MetricCardSection />
         <FilterSection />
         <SpendingChart />
+        <TransactionsTable />
       </div>
     </DashboardLayout>
   );

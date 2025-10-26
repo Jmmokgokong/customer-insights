@@ -4,7 +4,7 @@ const UserProfileCard = () => {
   const { data: user, loading, error } = useCustomerProfile('12345');
 
   if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (error) return <div>Error: ${error.toString()}</div>;
   if (!user) return <div>No user data</div>;
 
   return (
