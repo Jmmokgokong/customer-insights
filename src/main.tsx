@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.tsx'
 import { makeServer } from './server'
 
-// Initialize mock server for development
 if (import.meta.env.DEV) {
   makeServer();
 }
