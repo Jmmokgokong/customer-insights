@@ -1,7 +1,7 @@
 import { useSpendingSummary } from '../../../hooks/useCustomerData';
 import Card from '../Card';
 
-const MetricsCards = () => {
+const MetricCards = () => {
   const { data: summary, loading, error } = useSpendingSummary('12345');
 
   if (loading) return <div>Loading...</div>;
@@ -47,4 +47,4 @@ const MetricsCards = () => {
   );
 };
 
-export default MetricsCards;
+export default MetricCards;

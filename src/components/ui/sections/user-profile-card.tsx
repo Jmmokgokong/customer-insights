@@ -1,11 +1,15 @@
 import { useCustomerProfile } from '../../../hooks/useCustomerData';
+import { SkeletonProfile } from '../Skeleton';
 
 const UserProfileCard = () => {
   const { data: user, loading, error } = useCustomerProfile('12345');
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: ${error.toString()}</div>;
-  if (!user) return <div>No user data</div>;
+  if (loading) return <SkeletonProfile />;
+  if (error) return <div className="bg-white rounded-lg p-4 md:p-6 shadow-md text-center">
+    <div className="text-red-600 mb-2">⚠️ Error loading profile</div>
+    <div className="text-sm text-gray-600">{error}</div>
+  </div>;
+  if (!user) return <div className="bg-white rounded-lg p-4 md:p-6 shadow-md text-center text-gray-500">No user data available</div>;
 
   return (
     <div className="bg-white rounded-lg p-4 md:p-6 shadow-md w-full">

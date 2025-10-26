@@ -1,25 +1,26 @@
-import DashboardLayout from './components/ui/layout/dashboardLayout';
-import MetricCardSection from './components/ui/sections/MetricCardSection';
-import UserProfileCard from './components/ui/sections/userProfileCard';
-import FilterSection from './components/ui/sections/FilteringSection';
-import SpendingChart from './components/ui/sections/SpendingChart';
-import TransactionsTable from './components/ui/sections/TransactionTable';
-import SpendingTrendChart from './components/ui/sections/TrendChart';
-import BudgetGoals from './components/ui/sections/BudgetGoal';
+import DashboardLayout from './components/ui/layout/dashboard-layout';
+import MetricCards from './components/ui/sections/metric-cards';
+import UserProfileCard from './components/ui/sections/user-profile-card';
+import FilteringSection from './components/ui/sections/filtering-section';
+import SpendingChart from './components/ui/sections/spending-chart';
+import TransactionTable from './components/ui/sections/transaction-table';
+import TrendChart from './components/ui/sections/trend-chart';
+import BudgetGoals from './components/ui/sections/budget-goals';
+
 function App() {
   return (
     <DashboardLayout>
       <div className="flex flex-col gap-6">
         <UserProfileCard />
-        <MetricCardSection />
-        <FilterSection />
+        <MetricCards />
+        <FilteringSection />
         <div className="flex flex-col gap-6">
           <SpendingChart />
           <div className="flex flex-col gap-6">
-            <SpendingTrendChart />
+            <TrendChart />
           </div>
           <div className="flex flex-col gap-6">
-            <TransactionsTable />
+            <TransactionTable />
           </div>
           <div className="flex flex-col gap-6">
             <BudgetGoals />

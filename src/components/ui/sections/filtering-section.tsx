@@ -1,6 +1,6 @@
 import { useFilters } from '../../../hooks/useCustomerData';
 
-const FilterSection = () => {
+const FilteringSection = () => {
   const { data: filters, loading, error } = useFilters('12345');
 
   if (loading) return <div>Loading filters...</div>;
@@ -57,4 +57,4 @@ const FilterSection = () => {
   );
 };
 
-export default FilterSection;
+export default FilteringSection;

@@ -9,7 +9,7 @@ import {
 } from 'recharts';
 import Card from '../Card';
 
-const SpendingTrendChart = () => {
+const TrendChart = () => {
   const {
     data: spendingTrendsData,
     loading,
@@ -53,4 +53,4 @@ const SpendingTrendChart = () => {
   );
 };
 
-export default SpendingTrendChart;
+export default TrendChart;

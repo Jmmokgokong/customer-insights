@@ -1,7 +1,7 @@
 import { useTransactions } from '../../../hooks/useCustomerData';
 import Card from '../Card';
 
-const TransactionsTable = () => {
+const TransactionTable = () => {
   const { data: transactionsData, loading, error } = useTransactions('12345');
 
   if (loading) return <div>Loading transactions...</div>;
@@ -77,4 +77,4 @@ const TransactionsTable = () => {
   );
 };
 
-export default TransactionsTable;
+export default TransactionTable;
