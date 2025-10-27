@@ -36,7 +36,7 @@ const UserProfileCard = () => {
         <div className="text-center md:text-right">
           <p className="text-sm text-gray-500">Total Lifetime Spending</p>
           <p className="text-2xl md:text-3xl font-bold text-primary">
-            {user.currency} {user.totalSpent.toLocaleString()}
+            {user.currency} {user.totalSpent?.toLocaleString() || '0'}
           </p>
         </div>
       </div>

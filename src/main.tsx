@@ -5,9 +5,8 @@ import './styles/theme.css';
 import App from './App.tsx';
 import { makeServer } from './server';
 
-if (import.meta.env.DEV) {
-  makeServer();
-}
+// Start MirageJS server for this assessment (runs in both dev and production)
+makeServer();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
