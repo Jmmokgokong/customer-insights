@@ -5,15 +5,17 @@ A modern financial dashboard built with React, TypeScript, and Tailwind CSS.
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Docker and Docker Compose
 - OR Node.js 18+ and Yarn (for local development)
 
 ### Option 1: Docker (Recommended)
 
 1. **Clone and run**
+
    ```bash
-   git clone <repository-url>
-   cd customer-insights
+   git clone the repository
+   cd into customer-insights
    docker-compose up --build
    ```
 
@@ -23,6 +25,7 @@ A modern financial dashboard built with React, TypeScript, and Tailwind CSS.
 ### Option 2: Local Development
 
 1. **Install and run**
+
    ```bash
    yarn install
    yarn dev
@@ -43,6 +46,10 @@ yarn preview      # Preview production build
 yarn format       # Format code with Prettier
 yarn format:check # Check code formatting
 yarn lint         # Run ESLint
+
+# Testing
+yarn test         # Run tests
+yarn test:watch   # Run tests in watch mode
 ```
 
 ## 🐳 Docker Deployment
@@ -63,8 +70,7 @@ docker run -p 3000:80 customer-insights
 - Recharts (charts)
 - Axios (API)
 - MirageJS (mock server)
+- Vitest + Testing Library
 - Docker + Nginx
 
 ---
-
-**Assessment Project**: Production-grade React dashboard with Docker deployment 

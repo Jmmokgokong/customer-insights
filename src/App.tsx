@@ -5,7 +5,7 @@ function App() {
         Create Customer Dashboard
       </h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
