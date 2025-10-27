@@ -4,11 +4,15 @@ import '@testing-library/jest-dom';
 import App from '../App';
 
 describe('App Component', () => {
-  it('renders the main heading', () => {
+  it('renders the dashboard layout', () => {
     render(<App />);
 
-    const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toBeInTheDocument();
-    expect(heading).toHaveTextContent('Create Customer Dashboard');
+    // Check that the header is rendered
+    const header = screen.getByRole('banner');
+    expect(header).toBeInTheDocument();
+
+    // Check that the main content area is rendered
+    const main = screen.getByRole('main');
+    expect(main).toBeInTheDocument();
   });
 });

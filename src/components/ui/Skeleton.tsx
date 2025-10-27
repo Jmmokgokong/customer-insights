@@ -1,4 +1,3 @@
-
 export const SkeletonCard = () => (
   <div className="bg-white rounded-lg p-4 md:p-6 shadow-md animate-pulse">
     <div className="space-y-4">
